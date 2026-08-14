@@ -1,0 +1,7 @@
+# Rendered from configs/*/*.conf.in at install time (CMake substitutes
+# @REPO_DIR@ -> the installed $SITE_DIR).  Only the .in templates are tracked.
+configs/*/*.conf
+
+# Note: filters/*/provenance/*.source.json IS tracked.  It is the development
+# recipe that names the source checkout and exports a design was built from —
+# CMake keeps it out of the *install*, not out of the repository.
