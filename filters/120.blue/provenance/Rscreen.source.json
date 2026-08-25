@@ -1,0 +1,140 @@
+{
+  "schema": 2,
+  "geometry": "120.blue",
+  "design_id": "Rscreen",
+  "variant": "Rscreen",
+  "description": "120.blue Rscreen correction",
+  "audited_at": "2026-08-25",
+  "aggregate": {
+    "style": "LR",
+    "corrected": "filtered"
+  },
+  "source": {
+    "directory": "/home/giacomo/devel/DRC/DRC-120.blue/120.blue.Rscreen.txts",
+    "project": {
+      "name": "DRC-120.blue",
+      "repository": "/home/giacomo/devel/DRC/DRC-120.blue",
+      "remote": "https://github.com/delleceste/DRC-120.blue",
+      "branch": "master",
+      "commit": "2733819b212a2769f4565b196197e1d34cec9212",
+      "committed_at": "2026-08-25T11:07:56+02:00",
+      "subject": "measurements for 120.blue.Rscreen.txts",
+      "path": "120.blue.Rscreen.txts",
+      "clean": true,
+      "uncommitted": []
+    },
+    "measurements": {
+      "file": "120.blue.Rscreen.mdat",
+      "path": "120.blue.Rscreen.mdat",
+      "sha256": "a19a39f24c5124c4ecc27badedf225d6f1c6c6a6a7d98abd13021d06eeb8ce91",
+      "bytes": 80703516,
+      "git_blob": "41fabea2c2f29e30e8ed01fb2b52c8b57ec36ee8"
+    },
+    "artifacts": {
+      "original_left": {
+        "path": "L.txt",
+        "bundle_path": "source/Rscreen/L.txt",
+        "sha256": "363e3e6f342ba07d41b16996df2dc69f52ff271cb50e42fdffad053ed8317a2d",
+        "git_blob": "a0d57c7950f3603f9211ac8ce96ca30e6bdbf3b7",
+        "measurement": "L",
+        "smoothing": "None"
+      },
+      "original_right": {
+        "path": "R.txt",
+        "bundle_path": "source/Rscreen/R.txt",
+        "sha256": "13dbc220ddc1c545af5e7809fbc68ed038036b4c9efc1b9d1278f9e9b8516acc",
+        "git_blob": "56f8b5dcba4d8aac850153fbde32f9f77e444692",
+        "measurement": "R",
+        "smoothing": "None"
+      },
+      "original_sum": {
+        "path": "LR.txt",
+        "bundle_path": "source/Rscreen/LR.txt",
+        "sha256": "cd30657114ed697d6426962398f6d03fc23e68d0998156e2580b0f5339461194",
+        "git_blob": "da6696e4a5410fe42945fcda876e1b125a61b579",
+        "measurement": "LR",
+        "smoothing": "None"
+      },
+      "filter_left": {
+        "path": "FLX-trimmed.txt",
+        "bundle_path": "source/Rscreen/FLX-trimmed.txt",
+        "sha256": "cf7f78cca92ad500157a14eda70edf7b279ba153dafde20e02e085183a4e7dbb",
+        "git_blob": "bef0488124bb61d262558b8259c393f7c2fce974",
+        "measurement": "FLX-trimmed",
+        "smoothing": "None"
+      },
+      "filter_right": {
+        "path": "FRX-trimmed.txt",
+        "bundle_path": "source/Rscreen/FRX-trimmed.txt",
+        "sha256": "0f87648247067f7e9bfd7cc388410ae17343775880adcd2662c087c86141b72e",
+        "git_blob": "540c7f68737fcaebbc39bcfd5a678bd3353b9025",
+        "measurement": "FRX-trimmed",
+        "smoothing": "None"
+      },
+      "corrected_left": {
+        "path": "L.filtered.txt",
+        "bundle_path": "source/Rscreen/L.filtered.txt",
+        "sha256": "ba44ec64fd984ccce9bf8d131020016e78f730d238e517f8877cdc95ca5d9a85",
+        "git_blob": "0c54003ade5d598e1966a168c64166be0e968232",
+        "measurement": "L.filtered",
+        "smoothing": "None"
+      },
+      "corrected_right": {
+        "path": "R.filtered.txt",
+        "bundle_path": "source/Rscreen/R.filtered.txt",
+        "sha256": "eaa5ea5f9bf9462c04ff5ea7020335533801188840bbd7561d3cb921efbb60a2",
+        "git_blob": "2df86fdc24c2c69f041e7857e61891c8d2623c6b",
+        "measurement": "R.filtered",
+        "smoothing": "None"
+      },
+      "corrected_sum": {
+        "path": "LR.filtered.txt",
+        "bundle_path": "source/Rscreen/LR.filtered.txt",
+        "sha256": "294e0fbbf63a1f1cb4ce74b066751a3f4052580b3bf99b75b5a979e7f69cdc20",
+        "git_blob": "96e98650a278b7077d4aabdf6e78034298fb87d6",
+        "measurement": "LR.filtered",
+        "smoothing": "None"
+      },
+      "filter_left_wav": {
+        "path": "FLX-trimmed-48k.wav",
+        "bundle_path": "source/Rscreen/FLX-trimmed-48k.wav",
+        "sha256": "b0f46f52faebf2f11520b66544e51b2bc86151f4e6948b27c705c5185644a872",
+        "git_blob": "8af683f416a572163cff152cfc0a7f089abc67d0"
+      },
+      "filter_right_wav": {
+        "path": "FRX-trimmed-48k.wav",
+        "bundle_path": "source/Rscreen/FRX-trimmed-48k.wav",
+        "sha256": "aaa16f933a941ac31d800e06108e564de58e816341ac5edd300d134f55369a01",
+        "git_blob": "a62bc9824619d8fba09232ee495d717ea21dc69a"
+      }
+    }
+  },
+  "filter": {
+    "sample_rate": 48000,
+    "delay_samples": 8192,
+    "txt_to_wav_gain_db": {
+      "left": -3.000297,
+      "right": -3.000299
+    },
+    "txt_wav_limits": {
+      "max_rms_magnitude_db": 0.02,
+      "max_rms_phase_deg": 0.2,
+      "above_100_hz_max_magnitude_db": 0.1,
+      "above_100_hz_max_phase_deg": 1.0
+    }
+  },
+  "runtime": {
+    "selector": "@Rscreen",
+    "generate_configs": true,
+    "format": "FLOAT64_LE",
+    "attenuation_db": "auto",
+    "safety_margin_db": 1.0,
+    "rates": {
+      "44100": "configs/120.blue/brutefir-44100@Rscreen.conf.in",
+      "48000": "configs/120.blue/brutefir-48000@Rscreen.conf.in",
+      "88200": "configs/120.blue/brutefir-88200@Rscreen.conf.in",
+      "96000": "configs/120.blue/brutefir-96000@Rscreen.conf.in",
+      "192000": "configs/120.blue/brutefir-192000@Rscreen.conf.in"
+    }
+  }
+}
