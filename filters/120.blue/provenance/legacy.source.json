@@ -1,0 +1,143 @@
+{
+  "schema": 2,
+  "geometry": "120.blue",
+  "design_id": "legacy",
+  "variant": "legacy",
+  "description": "120.blue legacy correction",
+  "audited_at": "2026-09-01",
+  "aggregate": {
+    "style": "LR",
+    "corrected": "filtered"
+  },
+  "source": {
+    "directory": "120.blue.txts",
+    "project": {
+      "name": "browser upload",
+      "repository": "",
+      "remote": "",
+      "branch": "",
+      "commit": "",
+      "committed_at": "",
+      "subject": "",
+      "path": "120.blue.txts",
+      "kind": "browser-upload",
+      "archive_history": "required",
+      "clean": true,
+      "uncommitted": []
+    },
+    "measurements": {
+      "file": "120.blue.mdat",
+      "path": "120.blue.mdat",
+      "sha256": "62d534dac28abdd697223dde9187f02c78c1aa10f073cb51bfc5a6667efc953c",
+      "bytes": 45499690,
+      "git_blob": ""
+    },
+    "artifacts": {
+      "original_left": {
+        "path": "L.txt",
+        "bundle_path": "source/legacy/L.txt",
+        "sha256": "d1bff6e6793912e9364b48775b0de9259dac2103b05c92e477f252df538e9254",
+        "git_blob": "",
+        "measurement": "L.120.Blue",
+        "smoothing": "None"
+      },
+      "original_right": {
+        "path": "R.txt",
+        "bundle_path": "source/legacy/R.txt",
+        "sha256": "f1447b273e0e7a1f91add3f432b63bae6ae51d28a9fc40cbc6d1f2aa1fe61cf6",
+        "git_blob": "",
+        "measurement": "R.120.Blue",
+        "smoothing": "None"
+      },
+      "original_sum": {
+        "path": "LR.txt",
+        "bundle_path": "source/legacy/LR.txt",
+        "sha256": "78534a321d0dfb273eaee8715fda74a478cd4df9620b17ad145771f6dbe42a50",
+        "git_blob": "",
+        "measurement": "LR120.blue",
+        "smoothing": "None"
+      },
+      "filter_left": {
+        "path": "FLX-trimmed.txt",
+        "bundle_path": "source/legacy/FLX-trimmed.txt",
+        "sha256": "134c40aa35ad573a4dedc6a8243e9b95497a98df8df6c23e506848416a297749",
+        "git_blob": "",
+        "measurement": "FLX-trimmed",
+        "smoothing": "None"
+      },
+      "filter_right": {
+        "path": "FRX-trimmed.txt",
+        "bundle_path": "source/legacy/FRX-trimmed.txt",
+        "sha256": "a8a4b0fd9acb8201dadc4d144064264b7123ca0941d115befb523ed898659bc7",
+        "git_blob": "",
+        "measurement": "FRX-trimmed",
+        "smoothing": "None"
+      },
+      "corrected_left": {
+        "path": "L.filtered.txt",
+        "bundle_path": "source/legacy/L.filtered.txt",
+        "sha256": "0c64f11ecac6052acbb6ca6f809d7ef0489eefa120b4dc8487b2073e5354afbc",
+        "git_blob": "",
+        "measurement": "L.filtered",
+        "smoothing": "None"
+      },
+      "corrected_right": {
+        "path": "R.filtered.txt",
+        "bundle_path": "source/legacy/R.filtered.txt",
+        "sha256": "b72eef55bfe4ea1e809a022314326c02af245fd15b1ab3a695ffdb1042454386",
+        "git_blob": "",
+        "measurement": "R.filtered",
+        "smoothing": "None"
+      },
+      "corrected_sum": {
+        "path": "LR.filtered.txt",
+        "bundle_path": "source/legacy/LR.filtered.txt",
+        "sha256": "dedb86b22a133a6c3b8fff1195b0a55bdfa619de8c286d4bdd8975698da4f757",
+        "git_blob": "",
+        "measurement": "LR.filtered",
+        "smoothing": "None"
+      },
+      "filter_left_wav": {
+        "path": "FLX-trimmed-48k.wav",
+        "bundle_path": "source/legacy/FLX-trimmed-48k.wav",
+        "sha256": "c15efaa52fb2a6f49e38bede1b6b4f301e0e5f37c2a01007af162cf927d004f7",
+        "git_blob": ""
+      },
+      "filter_right_wav": {
+        "path": "FRX-trimmed-48k.wav",
+        "bundle_path": "source/legacy/FRX-trimmed-48k.wav",
+        "sha256": "b0dbe049f3c8ec4df6844a21b2c1d54b0616221989801e06bbea4c7fb3593574",
+        "git_blob": ""
+      }
+    }
+  },
+  "filter": {
+    "sample_rate": 48000,
+    "delay_samples": 24000,
+    "txt_to_wav_gain_db": {
+      "left": -1.3e-05,
+      "right": 6e-06
+    },
+    "txt_wav_limits": {
+      "max_rms_magnitude_db": 0.02,
+      "max_rms_phase_deg": 0.2,
+      "above_100_hz_max_magnitude_db": 0.1,
+      "above_100_hz_max_phase_deg": 1.0
+    }
+  },
+  "runtime": {
+    "selector": "@legacy",
+    "generate_configs": true,
+    "format": "FLOAT64_LE",
+    "attenuation_db": "auto",
+    "safety_margin_db": 1.0,
+    "coefficient_root": "@REPO_DIR@",
+    "rates": {
+      "44100": "configs/120.blue/brutefir-44100@legacy.conf.in",
+      "48000": "configs/120.blue/brutefir-48000@legacy.conf.in",
+      "88200": "configs/120.blue/brutefir-88200@legacy.conf.in",
+      "96000": "configs/120.blue/brutefir-96000@legacy.conf.in",
+      "192000": "configs/120.blue/brutefir-192000@legacy.conf.in"
+    }
+  }
+}
