@@ -16,9 +16,9 @@
       "repository": "/home/giacomo/devel/DRC/DRC-120.green",
       "remote": "https://github.com/delleceste/DRC-120.green",
       "branch": "master",
-      "commit": "7ed7baf477e6aec7a07e2486a2225970f1f33653",
-      "committed_at": "2026-09-15T13:37:05+02:00",
-      "subject": "Move REW pipeline to shared documentation tools",
+      "commit": "8226d4d93650798f9686e338714a2e2e4451325e",
+      "committed_at": "2026-09-15T16:15:30+02:00",
+      "subject": "added fdw6 refinements with parametric EQ",
       "path": "120.green.multipos.fdw6/DRC-120.green/120.green.120.green.multipos.fdw6.txts",
       "clean": true,
       "uncommitted": []
