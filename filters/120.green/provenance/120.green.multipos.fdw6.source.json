@@ -1,0 +1,147 @@
+{
+  "schema": 2,
+  "geometry": "120.green",
+  "design_id": "120.green.multipos.fdw6",
+  "variant": "120.green.multipos.fdw6",
+  "description": "120.green 120.green.multipos.fdw6 correction",
+  "audited_at": "2026-09-15",
+  "aggregate": {
+    "style": "LR",
+    "corrected": "filtered"
+  },
+  "source": {
+    "directory": "/home/giacomo/devel/DRC/DRC-120.green/120.green.multipos.fdw6/DRC-120.green/120.green.120.green.multipos.fdw6.txts",
+    "project": {
+      "name": "DRC-120.green",
+      "repository": "/home/giacomo/devel/DRC/DRC-120.green",
+      "remote": "https://github.com/delleceste/DRC-120.green",
+      "branch": "master",
+      "commit": "7ed7baf477e6aec7a07e2486a2225970f1f33653",
+      "committed_at": "2026-09-15T13:37:05+02:00",
+      "subject": "Move REW pipeline to shared documentation tools",
+      "path": "120.green.multipos.fdw6/DRC-120.green/120.green.120.green.multipos.fdw6.txts",
+      "clean": true,
+      "uncommitted": []
+    },
+    "measurements": {
+      "file": "120.green.120.green.multipos.fdw6.mdat",
+      "path": "120.green.multipos.fdw6/DRC-120.green/120.green.120.green.multipos.fdw6.mdat",
+      "sha256": "37f6d42e524c514e053b0fceb2cf739bcc13a1ee0b6d2cd99ace96657e4148c6",
+      "bytes": 61181050,
+      "git_blob": "efae3cefe5847a8b106ed790063691f816a87dd1",
+      "distances": {
+        "front_wall_m": "4.18",
+        "speakers_m": "3.32",
+        "speaker_wall_m": "1.20"
+      },
+      "marker_color": "green"
+    },
+    "artifacts": {
+      "original_left": {
+        "path": "L.txt",
+        "bundle_path": "source/120.green.multipos.fdw6/L.txt",
+        "sha256": "1faf7f5c6c1ac7a7713eb1d8fc3240c7ad9cac055a7d02bcb08d5a3dc75d65d7",
+        "git_blob": "3434adfd339ea8cc19bd1a2430f4469d547ea279",
+        "measurement": "L.nofdw.120.green.multipos.fdw6",
+        "smoothing": "None"
+      },
+      "original_right": {
+        "path": "R.txt",
+        "bundle_path": "source/120.green.multipos.fdw6/R.txt",
+        "sha256": "70948a90a99ea0690fdeb153772716a0c08e97cfd2d099b4200e74f91ed214b3",
+        "git_blob": "2403a7463545f070c2916a40905b9eefffc5cbe4",
+        "measurement": "R.nofdw.120.green.multipos.fdw6",
+        "smoothing": "None"
+      },
+      "original_sum": {
+        "path": "LR.txt",
+        "bundle_path": "source/120.green.multipos.fdw6/LR.txt",
+        "sha256": "460adfdac2c672fd72796a37b4e337d27b2cb014823efa3af48d4b63a9bba560",
+        "git_blob": "1ef348ffdfe8d570cc05ffba6f22110e6d8d4ca7",
+        "measurement": "LR.120.green.multipos.fdw6",
+        "smoothing": "None"
+      },
+      "filter_left": {
+        "path": "FLX-trimmed.txt",
+        "bundle_path": "source/120.green.multipos.fdw6/FLX-trimmed.txt",
+        "sha256": "4f6a2ecbbfaf62a323ed2c43e62cb484d555e81904d72bcab952acfd54b2ad27",
+        "git_blob": "7034ea3e31c4e4c1025bae35cf192f627db98e35",
+        "measurement": "",
+        "smoothing": "None"
+      },
+      "filter_right": {
+        "path": "FRX-trimmed.txt",
+        "bundle_path": "source/120.green.multipos.fdw6/FRX-trimmed.txt",
+        "sha256": "c2c44286a8e2362ce88c08e5135529b70f86516d879baabe41e9160c3d5b7e96",
+        "git_blob": "05a1124daec49571db20982269cbbce6b9fff0a8",
+        "measurement": "",
+        "smoothing": "None"
+      },
+      "corrected_left": {
+        "path": "L.filtered.txt",
+        "bundle_path": "source/120.green.multipos.fdw6/L.filtered.txt",
+        "sha256": "1ec4a83ac6301daf5354d759467e05f990ba4eef08f1093b225809117615509d",
+        "git_blob": "ff98a05ea07a9ff4c326a05fac4a49cccc5e05e1",
+        "measurement": "L.filtered.120.green.multipos.fdw6",
+        "smoothing": "None"
+      },
+      "corrected_right": {
+        "path": "R.filtered.txt",
+        "bundle_path": "source/120.green.multipos.fdw6/R.filtered.txt",
+        "sha256": "0d140b7f07fbacc5611617423bcdd30d5f2081d3a7ec646069dcf69f2a14453a",
+        "git_blob": "94e65075cc62789a31bed96d37073d007e92c4ec",
+        "measurement": "R.filtered.120.green.multipos.fdw6",
+        "smoothing": "None"
+      },
+      "corrected_sum": {
+        "path": "LR.filtered.txt",
+        "bundle_path": "source/120.green.multipos.fdw6/LR.filtered.txt",
+        "sha256": "7348c9a0bcb67fba0b19384f6eecc91ccd7511e6763e51b91a200cfcc2b31d5b",
+        "git_blob": "0d3c462733e2adf5cf404c2f241c1c277cc202ec",
+        "measurement": "LR.filtered.120.green.multipos.fdw6",
+        "smoothing": "None"
+      },
+      "filter_left_wav": {
+        "path": "FLX-trimmed-48k.wav",
+        "bundle_path": "source/120.green.multipos.fdw6/FLX-trimmed-48k.wav",
+        "sha256": "8613f6b7f36507141b7dce16ed9d00eef16b6cdadb7aa0a5d01fd8380831360c",
+        "git_blob": "c9f6fa65b73225e832437f4c8fa45605a9730a07"
+      },
+      "filter_right_wav": {
+        "path": "FRX-trimmed-48k.wav",
+        "bundle_path": "source/120.green.multipos.fdw6/FRX-trimmed-48k.wav",
+        "sha256": "8076adea372520c65dcd9c36aa32200794bffeea6ac7eb2d87769ebde6c686c9",
+        "git_blob": "7da86ce25b37bbfef82d621ce99b80079628aea9"
+      }
+    }
+  },
+  "filter": {
+    "sample_rate": 48000,
+    "delay_samples": 8192,
+    "txt_to_wav_gain_db": {
+      "left": 2e-06,
+      "right": 2e-06
+    },
+    "txt_wav_limits": {
+      "max_rms_magnitude_db": 0.02,
+      "max_rms_phase_deg": 0.2,
+      "above_100_hz_max_magnitude_db": 0.1,
+      "above_100_hz_max_phase_deg": 1.0
+    }
+  },
+  "runtime": {
+    "selector": "@120.green.multipos.fdw6",
+    "generate_configs": true,
+    "format": "FLOAT64_LE",
+    "attenuation_db": "auto",
+    "safety_margin_db": 1.0,
+    "coefficient_root": "@REPO_DIR@",
+    "rates": {
+      "44100": "configs/120.green/brutefir-44100@120.green.multipos.fdw6.conf.in",
+      "48000": "configs/120.green/brutefir-48000@120.green.multipos.fdw6.conf.in",
+      "88200": "configs/120.green/brutefir-88200@120.green.multipos.fdw6.conf.in",
+      "96000": "configs/120.green/brutefir-96000@120.green.multipos.fdw6.conf.in",
+      "192000": "configs/120.green/brutefir-192000@120.green.multipos.fdw6.conf.in"
+    }
+  }
+}
