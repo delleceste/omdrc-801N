@@ -10,15 +10,15 @@
     "corrected": "filtered"
   },
   "source": {
-    "directory": "/home/giacomo/devel/DRC/DRC-120.green/120.green.multipos.fdw6/DRC-120.green/120.green.120.green.multipos.fdw6.txts",
+    "directory": "/home/giacomo/DRC-120.green/120.green.multipos.fdw6/DRC-120.green/120.green.120.green.multipos.fdw6.txts",
     "project": {
       "name": "DRC-120.green",
-      "repository": "/home/giacomo/devel/DRC/DRC-120.green",
+      "repository": "/home/giacomo/DRC-120.green",
       "remote": "https://github.com/delleceste/DRC-120.green",
       "branch": "master",
-      "commit": "8226d4d93650798f9686e338714a2e2e4451325e",
-      "committed_at": "2026-09-15T16:15:30+02:00",
-      "subject": "added fdw6 refinements with parametric EQ",
+      "commit": "5de582d2c934653a9f64a14810e00e1b3e98b2fc",
+      "committed_at": "2026-09-15T11:28:50+02:00",
+      "subject": "deleted output/clean-fdw6 superseded by regenerated 20.green.multipos.fdw6 (added)",
       "path": "120.green.multipos.fdw6/DRC-120.green/120.green.120.green.multipos.fdw6.txts",
       "clean": true,
       "uncommitted": []

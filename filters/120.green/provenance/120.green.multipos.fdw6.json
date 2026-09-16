@@ -1,6 +1,6 @@
 {
   "schema": 2,
-  "bundle_id": "a617218ca98e48e325923394463cb22896c991bb4fa82894acec3136a7a2a57e",
+  "bundle_id": "a14299a241ffce3d767b1ddd364db0673a91232f6765ac866f393680b2661dac",
   "geometry": "120.green",
   "variant": "120.green.multipos.fdw6",
   "design_id": "120.green.multipos.fdw6",
@@ -14,21 +14,21 @@
       "no average, sum, convolution or smoothing stands between REW and the graph",
       "filter TXT responses match the canonical WAV responses within declared limits",
       "all runtime RAWs reproduce from those canonical WAVs",
-      "every BruteFIR config maps to the hashed RAW pair and has sufficient headroom",
+      "every BruteFIR config maps to the hashed RAW pair and is checked against the safe headroom estimate",
       "graph inputs are content-hash bound to this manifest"
     ],
     "prediction": "none: the corrected curves are measured REW exports, not a prediction"
   },
   "source": {
-    "directory": "/home/giacomo/devel/DRC/DRC-120.green/120.green.multipos.fdw6/DRC-120.green/120.green.120.green.multipos.fdw6.txts",
+    "directory": "/home/giacomo/DRC-120.green/120.green.multipos.fdw6/DRC-120.green/120.green.120.green.multipos.fdw6.txts",
     "project": {
       "name": "DRC-120.green",
-      "repository": "/home/giacomo/devel/DRC/DRC-120.green",
+      "repository": "/home/giacomo/DRC-120.green",
       "remote": "https://github.com/delleceste/DRC-120.green",
       "branch": "master",
-      "commit": "8226d4d93650798f9686e338714a2e2e4451325e",
-      "committed_at": "2026-09-15T16:15:30+02:00",
-      "subject": "added fdw6 refinements with parametric EQ",
+      "commit": "5de582d2c934653a9f64a14810e00e1b3e98b2fc",
+      "committed_at": "2026-09-15T11:28:50+02:00",
+      "subject": "deleted output/clean-fdw6 superseded by regenerated 20.green.multipos.fdw6 (added)",
       "path": "120.green.multipos.fdw6/DRC-120.green/120.green.120.green.multipos.fdw6.txts",
       "clean": true,
       "uncommitted": []
@@ -156,7 +156,7 @@
       "rms_magnitude_db": 2.7e-05,
       "rms_phase_deg": 2.9e-05,
       "above_100_hz_max_magnitude_db": 0.0005,
-      "above_100_hz_max_phase_deg": 5.8e-05,
+      "above_100_hz_max_phase_deg": 5.9e-05,
       "passed": true
     },
     "right": {
@@ -164,7 +164,7 @@
       "max_frequency_grid_error_hz": 5e-07,
       "rms_magnitude_db": 2.5e-05,
       "rms_phase_deg": 2.9e-05,
-      "above_100_hz_max_magnitude_db": 0.0005,
+      "above_100_hz_max_magnitude_db": 0.000501,
       "above_100_hz_max_phase_deg": 5.7e-05,
       "passed": true
     }
@@ -176,22 +176,27 @@
         "config_sha256": "1f1932a2bed4c7be164a8c95b0eec85fcc7d239ccc705b9c470eefdeb28f4c5b",
         "format": "FLOAT64_LE",
         "attenuation_db": 8.0,
-        "required_attenuation_db": 1.1,
+        "required_attenuation_db": 8.5,
         "safety_margin_db": 1.0,
+        "headroom_method": "peak-step-stress-convolution-v1",
         "channels": {
           "left": {
             "path": "44100/@120.green.multipos.fdw6/L.raw",
-            "sha256": "5902614937e0b2f85ea9fb396acf1e548be3871665e9d00120434604484940c0",
+            "sha256": "97eeee3a2697013b61840a9f7fd0eff67507592a269a1b78ee4273aa5bab386f",
             "bytes": 963376,
             "samples": 120422,
-            "peak_gain_db": 2.5e-05
+            "peak_gain_db": 2.4e-05,
+            "step_peak_db": 1.782955,
+            "music_convolution_peak_db": 7.449433
           },
           "right": {
             "path": "44100/@120.green.multipos.fdw6/R.raw",
-            "sha256": "5f14906278578a8106961ff2111df37986c5b9687120ee61a36f840df559b55d",
+            "sha256": "e38e262df939ccf4180ee35e3cc7cd1afa43cf9c08f02be6a37009970e86f6ed",
             "bytes": 963376,
             "samples": 120422,
-            "peak_gain_db": 1.5e-05
+            "peak_gain_db": 1.4e-05,
+            "step_peak_db": 2.139482,
+            "music_convolution_peak_db": 7.403048
           }
         }
       },
@@ -200,22 +205,27 @@
         "config_sha256": "ab53e36bef8bf03098b128504362865c0824668a3005207c25968531c944ccc7",
         "format": "FLOAT64_LE",
         "attenuation_db": 8.0,
-        "required_attenuation_db": 1.6,
+        "required_attenuation_db": 8.5,
         "safety_margin_db": 1.0,
+        "headroom_method": "peak-step-stress-convolution-v1",
         "channels": {
           "left": {
             "path": "48000/@120.green.multipos.fdw6/L.raw",
-            "sha256": "3e999717d81fa064876f121b258ee08031922fc11e298801c2c34137fb5db663",
+            "sha256": "4876c7029c0353f0f821dfa59515231eb5aaafd70a5d176e1c5263eaecea9652",
             "bytes": 1048576,
             "samples": 131072,
-            "peak_gain_db": 0.558445
+            "peak_gain_db": 0.558362,
+            "step_peak_db": 1.301967,
+            "music_convolution_peak_db": 7.444723
           },
           "right": {
             "path": "48000/@120.green.multipos.fdw6/R.raw",
-            "sha256": "ec30b97b706755bbc82fd13f7707ba6a394bdc891d453586d068ec56e13ff940",
+            "sha256": "afa363b9221184f2cfb9a9d456982f60dcd2d68c0c84d551ece28de90768512e",
             "bytes": 1048576,
             "samples": 131072,
-            "peak_gain_db": 0.558438
+            "peak_gain_db": 0.558357,
+            "step_peak_db": 1.63588,
+            "music_convolution_peak_db": 7.414956
           }
         }
       },
@@ -224,22 +234,27 @@
         "config_sha256": "592d79c5f76b1296622a982204e8fe4399a6538f4909bcff1ffb4ba6090a7f10",
         "format": "FLOAT64_LE",
         "attenuation_db": 8.0,
-        "required_attenuation_db": 1.1,
+        "required_attenuation_db": 8.5,
         "safety_margin_db": 1.0,
+        "headroom_method": "peak-step-stress-convolution-v1",
         "channels": {
           "left": {
             "path": "88200/@120.green.multipos.fdw6/L.raw",
-            "sha256": "eabddc7395754b67acb125841d9ef2aaa217b718cae12c5e585cffe107e9d803",
+            "sha256": "bacc296ecf051e64cc1fbfa7c8f905596f5f64c65ad85b45334fb43dfcaa9a5a",
             "bytes": 1926760,
             "samples": 240845,
-            "peak_gain_db": 2.5e-05
+            "peak_gain_db": 2.5e-05,
+            "step_peak_db": 1.376149,
+            "music_convolution_peak_db": 7.483378
           },
           "right": {
             "path": "88200/@120.green.multipos.fdw6/R.raw",
-            "sha256": "16a15373c82b1c9099fb0b5a88970ffdfb2f32215615599dd389ede4c4e8344f",
+            "sha256": "b1570736fc364878f74bb8e5df7c1f13359ae8145d970c74dcb27bb1a9ef9839",
             "bytes": 1926760,
             "samples": 240845,
-            "peak_gain_db": 1.6e-05
+            "peak_gain_db": 1.5e-05,
+            "step_peak_db": 1.748827,
+            "music_convolution_peak_db": 7.487457
           }
         }
       },
@@ -248,22 +263,27 @@
         "config_sha256": "a6d50e7dde514e704b414d796249e7ecff078c91bacb7a2dca2afc195d05a50d",
         "format": "FLOAT64_LE",
         "attenuation_db": 8.0,
-        "required_attenuation_db": 1.1,
+        "required_attenuation_db": 8.7,
         "safety_margin_db": 1.0,
+        "headroom_method": "peak-step-stress-convolution-v1",
         "channels": {
           "left": {
             "path": "96000/@120.green.multipos.fdw6/L.raw",
-            "sha256": "a8f7f9aec28f116d12c1e5424af65e6e7b37f3951780d8faad53aae03d62da81",
+            "sha256": "ed64272871223ef10cc5d12fdcb740b779d4aee452cd33bd52b91114a105843d",
             "bytes": 2097152,
             "samples": 262144,
-            "peak_gain_db": 0.000122
+            "peak_gain_db": 0.000114,
+            "step_peak_db": 1.37001,
+            "music_convolution_peak_db": 7.650461
           },
           "right": {
             "path": "96000/@120.green.multipos.fdw6/R.raw",
-            "sha256": "456f36d99a04fd31d24ff77ea5f9ec600b5d5dccbfe591a7ac9a1a939ad0efc0",
+            "sha256": "0e7e08655c0cf26a4d7c2ca2aff4a27b4e46dc31b125135bbbfc207270c2c653",
             "bytes": 2097152,
             "samples": 262144,
-            "peak_gain_db": 0.000124
+            "peak_gain_db": 0.000116,
+            "step_peak_db": 1.742949,
+            "music_convolution_peak_db": 7.635776
           }
         }
       },
@@ -272,22 +292,27 @@
         "config_sha256": "02394863dcc45e45de90a5aea9185fdaf009197d08fe756ff9cfa750c14ca0ec",
         "format": "FLOAT64_LE",
         "attenuation_db": 8.0,
-        "required_attenuation_db": 1.1,
+        "required_attenuation_db": 8.7,
         "safety_margin_db": 1.0,
+        "headroom_method": "peak-step-stress-convolution-v1",
         "channels": {
           "left": {
             "path": "192000/@120.green.multipos.fdw6/L.raw",
-            "sha256": "af8fa23819f6e1f8826dae0eed14264a18402de0a40827b593d482032ff974f7",
+            "sha256": "3795ef751a8bad481cbc6e013aef518a19f060609e07c1af7f057990704bac4a",
             "bytes": 4194304,
             "samples": 524288,
-            "peak_gain_db": 0.000122
+            "peak_gain_db": 0.000113,
+            "step_peak_db": 1.383622,
+            "music_convolution_peak_db": 7.676152
           },
           "right": {
             "path": "192000/@120.green.multipos.fdw6/R.raw",
-            "sha256": "8a960088fb7cf775dc6184a62fc1c70112a10d70ba8c66c3abb05ae1ae6c62b9",
+            "sha256": "b4ccd78c67da134d1b8cc8209c30a00b133f1779c677d33e84793d01db4b8b6b",
             "bytes": 4194304,
             "samples": 524288,
-            "peak_gain_db": 0.000123
+            "peak_gain_db": 0.000116,
+            "step_peak_db": 1.756217,
+            "music_convolution_peak_db": 7.65926
           }
         }
       }
@@ -295,7 +320,7 @@
   },
   "analysis": {
     "path": "analysis/120.green.multipos.fdw6.json",
-    "sha256": "03bdd0bd0614a7478258f68d3b5287e367218a2e17fa8c3c1bfa4b4ee4f0afb5",
-    "bytes": 27701422
+    "sha256": "ec8b4eda5515f0219e0eb45cd07fff47dcea66d3c9740df9b38c1a128525ba2e",
+    "bytes": 27701424
   }
 }
