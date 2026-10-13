@@ -1,0 +1,326 @@
+{
+  "schema": 2,
+  "bundle_id": "3573e0c7cdd023383d693a35b02083b98046d654a4047d086a691d3e4c1b93d3",
+  "geometry": "120.green",
+  "variant": "fdw6-dip185",
+  "design_id": "fdw6-dip185",
+  "description": "120.green fdw6-dip185 correction",
+  "response_available": true,
+  "verification": {
+    "status": "verified",
+    "audited_at": "2026-10-13",
+    "claims": [
+      "every plotted trace is one REW text export, stored and hashed verbatim",
+      "no average, sum, convolution or smoothing stands between REW and the graph",
+      "filter TXT responses match the canonical WAV responses within declared limits",
+      "all runtime RAWs reproduce from those canonical WAVs",
+      "every BruteFIR config maps to the hashed RAW pair and is checked against the safe headroom estimate",
+      "graph inputs are content-hash bound to this manifest"
+    ],
+    "prediction": "none: the corrected curves are measured REW exports, not a prediction"
+  },
+  "source": {
+    "directory": "/home/giacomo/devel/DRC/DRC-120.green/fdw6-dip185/DRC-120.green/120.green.fdw6-dip185.txts",
+    "project": {
+      "name": "DRC-120.green",
+      "repository": "/home/giacomo/devel/DRC/DRC-120.green",
+      "remote": "https://github.com/delleceste/DRC-120.green",
+      "branch": "master",
+      "commit": "3ddfb11bd841d1d3b3ca5a204174f10ff2ab9de9",
+      "committed_at": "2026-10-13T11:08:03+02:00",
+      "subject": "Add fdw6-dip185 and fdw6-sim185: 185 cm bass emulated at 120.green",
+      "path": "fdw6-dip185/DRC-120.green/120.green.fdw6-dip185.txts",
+      "clean": true,
+      "uncommitted": []
+    },
+    "measurements": {
+      "file": "120.green.fdw6-dip185.mdat",
+      "path": "fdw6-dip185/DRC-120.green/120.green.fdw6-dip185.mdat",
+      "sha256": "0942a8ec8f9e060926f94559375a47e05ddadcdc0fe2e6031f4bcdf017fd2545",
+      "bytes": 77589694,
+      "git_blob": "e108bc907fd999f8cff4739e7502029bd9ab4817",
+      "distances": {
+        "front_wall_m": "4.18",
+        "speakers_m": "3.32",
+        "speaker_wall_m": "1.20"
+      },
+      "marker_color": "green"
+    },
+    "artifacts": {
+      "original_left": {
+        "role": "original_left",
+        "path": "L.txt",
+        "bundle_path": "source/fdw6-dip185/L.txt",
+        "sha256": "1faf7f5c6c1ac7a7713eb1d8fc3240c7ad9cac055a7d02bcb08d5a3dc75d65d7",
+        "bytes": 1886601,
+        "measurement": "L.nofdw.120.green.multipos.fdw6",
+        "smoothing": "None",
+        "git_blob": "3434adfd339ea8cc19bd1a2430f4469d547ea279"
+      },
+      "original_right": {
+        "role": "original_right",
+        "path": "R.txt",
+        "bundle_path": "source/fdw6-dip185/R.txt",
+        "sha256": "70948a90a99ea0690fdeb153772716a0c08e97cfd2d099b4200e74f91ed214b3",
+        "bytes": 1903486,
+        "measurement": "R.nofdw.120.green.multipos.fdw6",
+        "smoothing": "None",
+        "git_blob": "2403a7463545f070c2916a40905b9eefffc5cbe4"
+      },
+      "original_sum": {
+        "role": "original_sum",
+        "path": "LR.txt",
+        "bundle_path": "source/fdw6-dip185/LR.txt",
+        "sha256": "460adfdac2c672fd72796a37b4e337d27b2cb014823efa3af48d4b63a9bba560",
+        "bytes": 1903705,
+        "measurement": "LR.120.green.multipos.fdw6",
+        "smoothing": "None",
+        "git_blob": "1ef348ffdfe8d570cc05ffba6f22110e6d8d4ca7"
+      },
+      "filter_left": {
+        "role": "filter_left",
+        "path": "FLX-trimmed.txt",
+        "bundle_path": "source/fdw6-dip185/FLX-trimmed.txt",
+        "sha256": "24d46bab58cbea12142311550aaca16705698109c71a79e94af6975ed86c2306",
+        "bytes": 1902466,
+        "measurement": "",
+        "smoothing": "None",
+        "git_blob": "18fabf587f9b703b24ef462e41b627eab8a1155f"
+      },
+      "filter_right": {
+        "role": "filter_right",
+        "path": "FRX-trimmed.txt",
+        "bundle_path": "source/fdw6-dip185/FRX-trimmed.txt",
+        "sha256": "5ac5ab2dff06d2ebc69a722ade5da88647ac8844aa5167efa883a4636d8b4dbe",
+        "bytes": 1902986,
+        "measurement": "",
+        "smoothing": "None",
+        "git_blob": "4b83470eaeebe75d66970ce8f7aa7d18937e2e21"
+      },
+      "corrected_left": {
+        "role": "corrected_left",
+        "path": "L.filtered.txt",
+        "bundle_path": "source/fdw6-dip185/L.filtered.txt",
+        "sha256": "cfa27911145c2eca8ceebd39b54840dee9802c3c66feb8c68ea3ea29bf1183ab",
+        "bytes": 3647312,
+        "measurement": "L.filtered.fdw6-dip185",
+        "smoothing": "None",
+        "git_blob": "9872dcf895f793e918d83c2f20de1857c119f939"
+      },
+      "corrected_right": {
+        "role": "corrected_right",
+        "path": "R.filtered.txt",
+        "bundle_path": "source/fdw6-dip185/R.filtered.txt",
+        "sha256": "e95ddff2d7e51793b1dc2624ab3f9488b4dbe2033e254f281373f212d2809e32",
+        "bytes": 3652282,
+        "measurement": "R.filtered.fdw6-dip185",
+        "smoothing": "None",
+        "git_blob": "a251d2d146f752a47f770d2fdb218b034119bbff"
+      },
+      "corrected_sum": {
+        "role": "corrected_sum",
+        "path": "LR.filtered.txt",
+        "bundle_path": "source/fdw6-dip185/LR.filtered.txt",
+        "sha256": "212cec3611b261c91ef69d5f1e7e226518f61d1b3164e08d6f5a8f325a4a3359",
+        "bytes": 3638121,
+        "measurement": "LR.filtered.fdw6-dip185",
+        "smoothing": "None",
+        "git_blob": "400c5dc1ae1e6d689ea1d09a623e6d92d72c86ea"
+      },
+      "filter_left_wav": {
+        "role": "filter_left_wav",
+        "path": "FLX-trimmed-48k.wav",
+        "bundle_path": "source/fdw6-dip185/FLX-trimmed-48k.wav",
+        "sha256": "dc74f42c2fa4f9258dacb7986a0c1a890b7fe459e374fdb45ac1529908de1fd3",
+        "bytes": 524332,
+        "git_blob": "8488ad73f878d63de8fe9924fabb0707b2cd8e4a"
+      },
+      "filter_right_wav": {
+        "role": "filter_right_wav",
+        "path": "FRX-trimmed-48k.wav",
+        "bundle_path": "source/fdw6-dip185/FRX-trimmed-48k.wav",
+        "sha256": "940387cf29d892b211de3f9696fe86a0dce3d5e45cf6cbb0b3978f18e31a7a3f",
+        "bytes": 524332,
+        "git_blob": "30b1649bf0d808927324d510198303328f047dcd"
+      }
+    }
+  },
+  "aggregate": {
+    "style": "LR",
+    "corrected": "filtered"
+  },
+  "filter_validation": {
+    "left": {
+      "rows": 65537,
+      "max_frequency_grid_error_hz": 5e-07,
+      "rms_magnitude_db": 0.000141,
+      "rms_phase_deg": 2.9e-05,
+      "above_100_hz_max_magnitude_db": 0.000513,
+      "above_100_hz_max_phase_deg": 5.6e-05,
+      "passed": true
+    },
+    "right": {
+      "rows": 65537,
+      "max_frequency_grid_error_hz": 5e-07,
+      "rms_magnitude_db": 0.000141,
+      "rms_phase_deg": 2.9e-05,
+      "above_100_hz_max_magnitude_db": 0.000514,
+      "above_100_hz_max_phase_deg": 5.7e-05,
+      "passed": true
+    }
+  },
+  "runtime": {
+    "rates": {
+      "44100": {
+        "config": "configs/120.green/brutefir-44100@fdw6-dip185.conf.in",
+        "config_sha256": "58f5e141ba80fa9d52c91dd324c06c0b79ce8f821d3a5df03d5fe3ae1aca8d51",
+        "format": "FLOAT64_LE",
+        "attenuation_db": 8.0,
+        "required_attenuation_db": 8.5,
+        "safety_margin_db": 1.0,
+        "headroom_method": "peak-step-stress-convolution-v1",
+        "channels": {
+          "left": {
+            "path": "44100/@fdw6-dip185/L.raw",
+            "sha256": "582cbc124e737aae0c7125be02be0fd7e6a852c390cbc2408ca4f6842d9f0d73",
+            "bytes": 963376,
+            "samples": 120422,
+            "peak_gain_db": 0.268667,
+            "step_peak_db": 0.700902,
+            "music_convolution_peak_db": 7.429617
+          },
+          "right": {
+            "path": "44100/@fdw6-dip185/R.raw",
+            "sha256": "ab7f1e62fce9d83a06c19fa89eaf26d719f13012828ad04ccc038a61855bc074",
+            "bytes": 963376,
+            "samples": 120422,
+            "peak_gain_db": 0.268665,
+            "step_peak_db": 0.760998,
+            "music_convolution_peak_db": 7.381592
+          }
+        }
+      },
+      "48000": {
+        "config": "configs/120.green/brutefir-48000@fdw6-dip185.conf.in",
+        "config_sha256": "df4de1100d80e15501a159a1ce62b97c168ab140f8a75da9fd75fed2ce3c931a",
+        "format": "FLOAT64_LE",
+        "attenuation_db": 8.0,
+        "required_attenuation_db": 8.3,
+        "safety_margin_db": 1.0,
+        "headroom_method": "peak-step-stress-convolution-v1",
+        "channels": {
+          "left": {
+            "path": "48000/@fdw6-dip185/L.raw",
+            "sha256": "260c127d4f91b6e9fbc2ec49928ed6dd47ca26bc672c8c983bbb3ea8d7ce1cf2",
+            "bytes": 1048576,
+            "samples": 131072,
+            "peak_gain_db": 0.6912,
+            "step_peak_db": 0.702706,
+            "music_convolution_peak_db": 7.276436
+          },
+          "right": {
+            "path": "48000/@fdw6-dip185/R.raw",
+            "sha256": "6eda3a16508ca8c0c278b7a78d18ba6d4e33025387bf4f7f043b6a0210e1f4c8",
+            "bytes": 1048576,
+            "samples": 131072,
+            "peak_gain_db": 0.691194,
+            "step_peak_db": 0.728688,
+            "music_convolution_peak_db": 7.235971
+          }
+        }
+      },
+      "88200": {
+        "config": "configs/120.green/brutefir-88200@fdw6-dip185.conf.in",
+        "config_sha256": "e01fddf5bae55851f45a7d77af74ad23e13c19a00f417b943e33daef6df35bb5",
+        "format": "FLOAT64_LE",
+        "attenuation_db": 8.0,
+        "required_attenuation_db": 8.3,
+        "safety_margin_db": 1.0,
+        "headroom_method": "peak-step-stress-convolution-v1",
+        "channels": {
+          "left": {
+            "path": "88200/@fdw6-dip185/L.raw",
+            "sha256": "6351dc307018aa51795fe62639f4b9349db31e3e4f21f54ccf1a101f5bb79186",
+            "bytes": 1926760,
+            "samples": 240845,
+            "peak_gain_db": 0.268667,
+            "step_peak_db": 0.702326,
+            "music_convolution_peak_db": 7.277172
+          },
+          "right": {
+            "path": "88200/@fdw6-dip185/R.raw",
+            "sha256": "8203c8005eb4be761d06f987f7bbe86941995b2d1a22836dc422a3004bad7f5f",
+            "bytes": 1926760,
+            "samples": 240845,
+            "peak_gain_db": 0.268665,
+            "step_peak_db": 0.72882,
+            "music_convolution_peak_db": 7.276748
+          }
+        }
+      },
+      "96000": {
+        "config": "configs/120.green/brutefir-96000@fdw6-dip185.conf.in",
+        "config_sha256": "497358cff373ff2cb6b292e37ba0c6d16b3bad8313a5c218fd86fce08b24a4ad",
+        "format": "FLOAT64_LE",
+        "attenuation_db": 8.0,
+        "required_attenuation_db": 8.6,
+        "safety_margin_db": 1.0,
+        "headroom_method": "peak-step-stress-convolution-v1",
+        "channels": {
+          "left": {
+            "path": "96000/@fdw6-dip185/L.raw",
+            "sha256": "25d2f5f5912f9c6db955e12f856965914d70e6a6f5724e0aaf0e913db287e0e3",
+            "bytes": 2097152,
+            "samples": 262144,
+            "peak_gain_db": 0.268228,
+            "step_peak_db": 0.701988,
+            "music_convolution_peak_db": 7.580686
+          },
+          "right": {
+            "path": "96000/@fdw6-dip185/R.raw",
+            "sha256": "57f6ecf41b60201e62cd91e40b875c9ee23a85703ff6754346a9834608105362",
+            "bytes": 2097152,
+            "samples": 262144,
+            "peak_gain_db": 0.268232,
+            "step_peak_db": 0.728113,
+            "music_convolution_peak_db": 7.573903
+          }
+        }
+      },
+      "192000": {
+        "config": "configs/120.green/brutefir-192000@fdw6-dip185.conf.in",
+        "config_sha256": "d344e98114ecfd5a3c466c0809eb78440504ee23e8faf92256e841ce272be360",
+        "format": "FLOAT64_LE",
+        "attenuation_db": 8.0,
+        "required_attenuation_db": 8.7,
+        "safety_margin_db": 1.0,
+        "headroom_method": "peak-step-stress-convolution-v1",
+        "channels": {
+          "left": {
+            "path": "192000/@fdw6-dip185/L.raw",
+            "sha256": "2a5f8cf2b3d65d8ee2c8d6328df153a72301c1508e9bbf42ccdbf03753c087bb",
+            "bytes": 4194304,
+            "samples": 524288,
+            "peak_gain_db": 0.268223,
+            "step_peak_db": 0.70218,
+            "music_convolution_peak_db": 7.611892
+          },
+          "right": {
+            "path": "192000/@fdw6-dip185/R.raw",
+            "sha256": "168655d6e9ab988c48252a59a85a83153ba00eb4afbdb5c3419a4998412f77b8",
+            "bytes": 4194304,
+            "samples": 524288,
+            "peak_gain_db": 0.268228,
+            "step_peak_db": 0.728444,
+            "music_convolution_peak_db": 7.602859
+          }
+        }
+      }
+    }
+  },
+  "analysis": {
+    "path": "analysis/fdw6-dip185.json",
+    "sha256": "834d712a18dcee784c43fc540acd762f51cba1706eadae7510ca9b025887adc0",
+    "bytes": 27818240
+  }
+}

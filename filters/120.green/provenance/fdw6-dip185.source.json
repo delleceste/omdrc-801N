@@ -1,0 +1,147 @@
+{
+  "schema": 2,
+  "geometry": "120.green",
+  "design_id": "fdw6-dip185",
+  "variant": "fdw6-dip185",
+  "description": "120.green fdw6-dip185 correction",
+  "audited_at": "2026-10-13",
+  "aggregate": {
+    "style": "LR",
+    "corrected": "filtered"
+  },
+  "source": {
+    "directory": "/home/giacomo/devel/DRC/DRC-120.green/fdw6-dip185/DRC-120.green/120.green.fdw6-dip185.txts",
+    "project": {
+      "name": "DRC-120.green",
+      "repository": "/home/giacomo/devel/DRC/DRC-120.green",
+      "remote": "https://github.com/delleceste/DRC-120.green",
+      "branch": "master",
+      "commit": "3ddfb11bd841d1d3b3ca5a204174f10ff2ab9de9",
+      "committed_at": "2026-10-13T11:08:03+02:00",
+      "subject": "Add fdw6-dip185 and fdw6-sim185: 185 cm bass emulated at 120.green",
+      "path": "fdw6-dip185/DRC-120.green/120.green.fdw6-dip185.txts",
+      "clean": true,
+      "uncommitted": []
+    },
+    "measurements": {
+      "file": "120.green.fdw6-dip185.mdat",
+      "path": "fdw6-dip185/DRC-120.green/120.green.fdw6-dip185.mdat",
+      "sha256": "0942a8ec8f9e060926f94559375a47e05ddadcdc0fe2e6031f4bcdf017fd2545",
+      "bytes": 77589694,
+      "git_blob": "e108bc907fd999f8cff4739e7502029bd9ab4817",
+      "distances": {
+        "front_wall_m": "4.18",
+        "speakers_m": "3.32",
+        "speaker_wall_m": "1.20"
+      },
+      "marker_color": "green"
+    },
+    "artifacts": {
+      "original_left": {
+        "path": "L.txt",
+        "bundle_path": "source/fdw6-dip185/L.txt",
+        "sha256": "1faf7f5c6c1ac7a7713eb1d8fc3240c7ad9cac055a7d02bcb08d5a3dc75d65d7",
+        "git_blob": "3434adfd339ea8cc19bd1a2430f4469d547ea279",
+        "measurement": "L.nofdw.120.green.multipos.fdw6",
+        "smoothing": "None"
+      },
+      "original_right": {
+        "path": "R.txt",
+        "bundle_path": "source/fdw6-dip185/R.txt",
+        "sha256": "70948a90a99ea0690fdeb153772716a0c08e97cfd2d099b4200e74f91ed214b3",
+        "git_blob": "2403a7463545f070c2916a40905b9eefffc5cbe4",
+        "measurement": "R.nofdw.120.green.multipos.fdw6",
+        "smoothing": "None"
+      },
+      "original_sum": {
+        "path": "LR.txt",
+        "bundle_path": "source/fdw6-dip185/LR.txt",
+        "sha256": "460adfdac2c672fd72796a37b4e337d27b2cb014823efa3af48d4b63a9bba560",
+        "git_blob": "1ef348ffdfe8d570cc05ffba6f22110e6d8d4ca7",
+        "measurement": "LR.120.green.multipos.fdw6",
+        "smoothing": "None"
+      },
+      "filter_left": {
+        "path": "FLX-trimmed.txt",
+        "bundle_path": "source/fdw6-dip185/FLX-trimmed.txt",
+        "sha256": "24d46bab58cbea12142311550aaca16705698109c71a79e94af6975ed86c2306",
+        "git_blob": "18fabf587f9b703b24ef462e41b627eab8a1155f",
+        "measurement": "",
+        "smoothing": "None"
+      },
+      "filter_right": {
+        "path": "FRX-trimmed.txt",
+        "bundle_path": "source/fdw6-dip185/FRX-trimmed.txt",
+        "sha256": "5ac5ab2dff06d2ebc69a722ade5da88647ac8844aa5167efa883a4636d8b4dbe",
+        "git_blob": "4b83470eaeebe75d66970ce8f7aa7d18937e2e21",
+        "measurement": "",
+        "smoothing": "None"
+      },
+      "corrected_left": {
+        "path": "L.filtered.txt",
+        "bundle_path": "source/fdw6-dip185/L.filtered.txt",
+        "sha256": "cfa27911145c2eca8ceebd39b54840dee9802c3c66feb8c68ea3ea29bf1183ab",
+        "git_blob": "9872dcf895f793e918d83c2f20de1857c119f939",
+        "measurement": "L.filtered.fdw6-dip185",
+        "smoothing": "None"
+      },
+      "corrected_right": {
+        "path": "R.filtered.txt",
+        "bundle_path": "source/fdw6-dip185/R.filtered.txt",
+        "sha256": "e95ddff2d7e51793b1dc2624ab3f9488b4dbe2033e254f281373f212d2809e32",
+        "git_blob": "a251d2d146f752a47f770d2fdb218b034119bbff",
+        "measurement": "R.filtered.fdw6-dip185",
+        "smoothing": "None"
+      },
+      "corrected_sum": {
+        "path": "LR.filtered.txt",
+        "bundle_path": "source/fdw6-dip185/LR.filtered.txt",
+        "sha256": "212cec3611b261c91ef69d5f1e7e226518f61d1b3164e08d6f5a8f325a4a3359",
+        "git_blob": "400c5dc1ae1e6d689ea1d09a623e6d92d72c86ea",
+        "measurement": "LR.filtered.fdw6-dip185",
+        "smoothing": "None"
+      },
+      "filter_left_wav": {
+        "path": "FLX-trimmed-48k.wav",
+        "bundle_path": "source/fdw6-dip185/FLX-trimmed-48k.wav",
+        "sha256": "dc74f42c2fa4f9258dacb7986a0c1a890b7fe459e374fdb45ac1529908de1fd3",
+        "git_blob": "8488ad73f878d63de8fe9924fabb0707b2cd8e4a"
+      },
+      "filter_right_wav": {
+        "path": "FRX-trimmed-48k.wav",
+        "bundle_path": "source/fdw6-dip185/FRX-trimmed-48k.wav",
+        "sha256": "940387cf29d892b211de3f9696fe86a0dce3d5e45cf6cbb0b3978f18e31a7a3f",
+        "git_blob": "30b1649bf0d808927324d510198303328f047dcd"
+      }
+    }
+  },
+  "filter": {
+    "sample_rate": 48000,
+    "delay_samples": 8192,
+    "txt_to_wav_gain_db": {
+      "left": -1.3e-05,
+      "right": -1.4e-05
+    },
+    "txt_wav_limits": {
+      "max_rms_magnitude_db": 0.02,
+      "max_rms_phase_deg": 0.2,
+      "above_100_hz_max_magnitude_db": 0.1,
+      "above_100_hz_max_phase_deg": 1.0
+    }
+  },
+  "runtime": {
+    "selector": "@fdw6-dip185",
+    "generate_configs": true,
+    "format": "FLOAT64_LE",
+    "attenuation_db": "auto",
+    "safety_margin_db": 1.0,
+    "coefficient_root": "@REPO_DIR@",
+    "rates": {
+      "44100": "configs/120.green/brutefir-44100@fdw6-dip185.conf.in",
+      "48000": "configs/120.green/brutefir-48000@fdw6-dip185.conf.in",
+      "88200": "configs/120.green/brutefir-88200@fdw6-dip185.conf.in",
+      "96000": "configs/120.green/brutefir-96000@fdw6-dip185.conf.in",
+      "192000": "configs/120.green/brutefir-192000@fdw6-dip185.conf.in"
+    }
+  }
+}
