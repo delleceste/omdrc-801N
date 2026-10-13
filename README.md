@@ -26,8 +26,28 @@ filters/<geometry>/rew/                                 original REW source mate
 A *geometry* is a physical setup (speaker position). A *design* is one immutable
 filter revision within it, selectable at runtime and addressed as `@<design>`.
 
-`120.blue` is currently the only set here: the 2025 measurements as the `default`
-design, plus a verified `@rscreen-20260812` A/B design.
+This repository holds the **current** situation only. Today that is `120.green`:
+
+| design | what it is |
+|---|---|
+| `@120.green.multipos.fdw6` | the correction filter: five-position spatial average, FDW 6 |
+| `@fdw6-dip185` | listening test: the official filter plus the 185 cm bottom-octave null (−20 dB at 42 Hz) |
+| `@fdw6-sim185` | listening test: as above, plus 185 cm's tamed upper-bass shape |
+
+The two `185` designs emulate the 185 cm bass at the 120 cm position, to tell
+whether 185's imaging and air come from the geometry or from the missing
+bass. They deliberately fail `drc_acceptance.py` (the notch) and are not
+corrections. Sources and recipe: `DRC-120.green/fdw6-*/`.
+
+Retired geometries are kept as tags, not as directories:
+
+| tag | contents |
+|---|---|
+| `120.blue-final` | `120.blue`: the 2025 `default`, `@legacy`, `@multi.pt` |
+
+To install one again, check the tag out somewhere
+(`git worktree add ../omdrc-801N-blue 120.blue-final`) and add that checkout to
+`OMDRC_SITE_DATA_DIRS`.
 
 `configs/*/*.conf` is gitignored: those are rendered from the `.conf.in`
 templates at install time, when CMake rewrites `@REPO_DIR@` to the installed
@@ -41,7 +61,7 @@ first match wins, so the engine keeps supplying `flat`:
 ```sh
 cmake -S . -B build \
   -DOMDRC_SITE_DATA_DIRS="$PWD;$HOME/devel/omdrc-801N" \
-  -DGEOMETRY=flat -DGEOMETRIES=120.blue
+  -DGEOMETRY=flat -DGEOMETRIES=120.green
 sudo cmake --install build
 ```
 
