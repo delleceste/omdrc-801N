@@ -1,0 +1,298 @@
+{
+  "schema": 2,
+  "bundle_id": "299dad461faac83259ea15cc9e1e76db1bd59632b1c366d5caabaceb35caa4c9",
+  "geometry": "120.blue",
+  "variant": "legacy",
+  "design_id": "legacy",
+  "description": "120.blue legacy correction",
+  "response_available": true,
+  "verification": {
+    "status": "verified",
+    "audited_at": "2026-09-01",
+    "claims": [
+      "every plotted trace is one REW text export, stored and hashed verbatim",
+      "no average, sum, convolution or smoothing stands between REW and the graph",
+      "filter TXT responses match the canonical WAV responses within declared limits",
+      "all runtime RAWs reproduce from those canonical WAVs",
+      "every BruteFIR config maps to the hashed RAW pair and has sufficient headroom",
+      "graph inputs are content-hash bound to this manifest"
+    ],
+    "prediction": "none: the corrected curves are measured REW exports, not a prediction"
+  },
+  "source": {
+    "directory": "120.blue.txts",
+    "project": {
+      "name": "browser upload",
+      "repository": "",
+      "remote": "",
+      "branch": "",
+      "commit": "",
+      "committed_at": "",
+      "subject": "",
+      "path": "120.blue.txts",
+      "kind": "browser-upload",
+      "archive_history": "required",
+      "clean": true,
+      "uncommitted": []
+    },
+    "measurements": {
+      "file": "120.blue.mdat",
+      "path": "120.blue.mdat",
+      "sha256": "62d534dac28abdd697223dde9187f02c78c1aa10f073cb51bfc5a6667efc953c",
+      "bytes": 45499690,
+      "git_blob": "",
+      "bundle_path": "source/legacy/120.blue.mdat"
+    },
+    "artifacts": {
+      "original_left": {
+        "role": "original_left",
+        "path": "L.txt",
+        "bundle_path": "source/legacy/L.txt",
+        "sha256": "d1bff6e6793912e9364b48775b0de9259dac2103b05c92e477f252df538e9254",
+        "bytes": 1699278,
+        "measurement": "L.120.Blue",
+        "smoothing": "None",
+        "git_blob": ""
+      },
+      "original_right": {
+        "role": "original_right",
+        "path": "R.txt",
+        "bundle_path": "source/legacy/R.txt",
+        "sha256": "f1447b273e0e7a1f91add3f432b63bae6ae51d28a9fc40cbc6d1f2aa1fe61cf6",
+        "bytes": 1697989,
+        "measurement": "R.120.Blue",
+        "smoothing": "None",
+        "git_blob": ""
+      },
+      "original_sum": {
+        "role": "original_sum",
+        "path": "LR.txt",
+        "bundle_path": "source/legacy/LR.txt",
+        "sha256": "78534a321d0dfb273eaee8715fda74a478cd4df9620b17ad145771f6dbe42a50",
+        "bytes": 1699884,
+        "measurement": "LR120.blue",
+        "smoothing": "None",
+        "git_blob": ""
+      },
+      "filter_left": {
+        "role": "filter_left",
+        "path": "FLX-trimmed.txt",
+        "bundle_path": "source/legacy/FLX-trimmed.txt",
+        "sha256": "134c40aa35ad573a4dedc6a8243e9b95497a98df8df6c23e506848416a297749",
+        "bytes": 1816371,
+        "measurement": "FLX-trimmed",
+        "smoothing": "None",
+        "git_blob": ""
+      },
+      "filter_right": {
+        "role": "filter_right",
+        "path": "FRX-trimmed.txt",
+        "bundle_path": "source/legacy/FRX-trimmed.txt",
+        "sha256": "a8a4b0fd9acb8201dadc4d144064264b7123ca0941d115befb523ed898659bc7",
+        "bytes": 1863654,
+        "measurement": "FRX-trimmed",
+        "smoothing": "None",
+        "git_blob": ""
+      },
+      "corrected_left": {
+        "role": "corrected_left",
+        "path": "L.filtered.txt",
+        "bundle_path": "source/legacy/L.filtered.txt",
+        "sha256": "0c64f11ecac6052acbb6ca6f809d7ef0489eefa120b4dc8487b2073e5354afbc",
+        "bytes": 1703262,
+        "measurement": "L.filtered",
+        "smoothing": "None",
+        "git_blob": ""
+      },
+      "corrected_right": {
+        "role": "corrected_right",
+        "path": "R.filtered.txt",
+        "bundle_path": "source/legacy/R.filtered.txt",
+        "sha256": "b72eef55bfe4ea1e809a022314326c02af245fd15b1ab3a695ffdb1042454386",
+        "bytes": 1729217,
+        "measurement": "R.filtered",
+        "smoothing": "None",
+        "git_blob": ""
+      },
+      "corrected_sum": {
+        "role": "corrected_sum",
+        "path": "LR.filtered.txt",
+        "bundle_path": "source/legacy/LR.filtered.txt",
+        "sha256": "dedb86b22a133a6c3b8fff1195b0a55bdfa619de8c286d4bdd8975698da4f757",
+        "bytes": 1711596,
+        "measurement": "LR.filtered",
+        "smoothing": "None",
+        "git_blob": ""
+      },
+      "filter_left_wav": {
+        "role": "filter_left_wav",
+        "path": "FLX-trimmed-48k.wav",
+        "bundle_path": "source/legacy/FLX-trimmed-48k.wav",
+        "sha256": "c15efaa52fb2a6f49e38bede1b6b4f301e0e5f37c2a01007af162cf927d004f7",
+        "bytes": 524332,
+        "git_blob": ""
+      },
+      "filter_right_wav": {
+        "role": "filter_right_wav",
+        "path": "FRX-trimmed-48k.wav",
+        "bundle_path": "source/legacy/FRX-trimmed-48k.wav",
+        "sha256": "b0dbe049f3c8ec4df6844a21b2c1d54b0616221989801e06bbea4c7fb3593574",
+        "bytes": 524332,
+        "git_blob": ""
+      }
+    }
+  },
+  "aggregate": {
+    "style": "LR",
+    "corrected": "filtered"
+  },
+  "filter_validation": {
+    "left": {
+      "rows": 65533,
+      "max_frequency_grid_error_hz": 5e-07,
+      "rms_magnitude_db": 0.012483,
+      "rms_phase_deg": 0.094596,
+      "above_100_hz_max_magnitude_db": 0.048981,
+      "above_100_hz_max_phase_deg": 0.453365,
+      "passed": true
+    },
+    "right": {
+      "rows": 65533,
+      "max_frequency_grid_error_hz": 5e-07,
+      "rms_magnitude_db": 0.0018,
+      "rms_phase_deg": 0.011858,
+      "above_100_hz_max_magnitude_db": 0.040122,
+      "above_100_hz_max_phase_deg": 0.399662,
+      "passed": true
+    }
+  },
+  "runtime": {
+    "rates": {
+      "44100": {
+        "config": "configs/120.blue/brutefir-44100@legacy.conf.in",
+        "config_sha256": "f76faabd0c1ef0fa3d11530a72dda3d8aa4a40d7adfb955492dfca13c038d95b",
+        "format": "FLOAT64_LE",
+        "attenuation_db": 2.3,
+        "required_attenuation_db": 2.3,
+        "safety_margin_db": 1.0,
+        "channels": {
+          "left": {
+            "path": "44100/@legacy/L.raw",
+            "sha256": "0fc05f26209722eae48622e4028cb9786f18b6c324bf9ee00a476fe951568383",
+            "bytes": 963376,
+            "samples": 120422,
+            "peak_gain_db": 1.277059
+          },
+          "right": {
+            "path": "44100/@legacy/R.raw",
+            "sha256": "cbbfea3f2a4afc7d2da54eed430e5ae2650cc8ca53ecd891d79b9334715f50d6",
+            "bytes": 963376,
+            "samples": 120422,
+            "peak_gain_db": 0.182762
+          }
+        }
+      },
+      "48000": {
+        "config": "configs/120.blue/brutefir-48000@legacy.conf.in",
+        "config_sha256": "93c28fa0cba6e6930bc2ed88facb03eb2b502a7bd4540eaf03c6e01208972680",
+        "format": "FLOAT64_LE",
+        "attenuation_db": 2.2,
+        "required_attenuation_db": 2.2,
+        "safety_margin_db": 1.0,
+        "channels": {
+          "left": {
+            "path": "48000/@legacy/L.raw",
+            "sha256": "7eed7fee34176819f0a295142f50cca9c312256887fcf8a6ce472d48c9b91457",
+            "bytes": 1048576,
+            "samples": 131072,
+            "peak_gain_db": 1.193937
+          },
+          "right": {
+            "path": "48000/@legacy/R.raw",
+            "sha256": "db711fddeeb5e3c3023d97a93229fe194a96759dc98df2deecd1d152133ce36f",
+            "bytes": 1048576,
+            "samples": 131072,
+            "peak_gain_db": 0.777835
+          }
+        }
+      },
+      "88200": {
+        "config": "configs/120.blue/brutefir-88200@legacy.conf.in",
+        "config_sha256": "1defcc8ba528334dfe83f2b2e29839cc7da292a47d830e1bd6d3032d7e5c07cf",
+        "format": "FLOAT64_LE",
+        "attenuation_db": 2.3,
+        "required_attenuation_db": 2.3,
+        "safety_margin_db": 1.0,
+        "channels": {
+          "left": {
+            "path": "88200/@legacy/L.raw",
+            "sha256": "472ea17e8e6b6baae1109c136f76032be0e32be389b281470c6782e52be044cc",
+            "bytes": 1926760,
+            "samples": 240845,
+            "peak_gain_db": 1.27697
+          },
+          "right": {
+            "path": "88200/@legacy/R.raw",
+            "sha256": "ee17cb8e474934aff9791b52ca57488125eaec28bfdf3f38b8891e5dec14c208",
+            "bytes": 1926760,
+            "samples": 240845,
+            "peak_gain_db": 0.182782
+          }
+        }
+      },
+      "96000": {
+        "config": "configs/120.blue/brutefir-96000@legacy.conf.in",
+        "config_sha256": "a32fe34fe535f2e298038c0132e42d0202552b0a12f4958b5230adb82f11ac1b",
+        "format": "FLOAT64_LE",
+        "attenuation_db": 2.2,
+        "required_attenuation_db": 2.2,
+        "safety_margin_db": 1.0,
+        "channels": {
+          "left": {
+            "path": "96000/@legacy/L.raw",
+            "sha256": "24f12e4785dfcdf00db9704fbf167124e575439ecb98079e2850e9f55a82f981",
+            "bytes": 2097152,
+            "samples": 262144,
+            "peak_gain_db": 1.19382
+          },
+          "right": {
+            "path": "96000/@legacy/R.raw",
+            "sha256": "dcafb6023df3ec24dd2bb67153dbfa7132fb3d9e3c8ceea47cf6b894c3d4a332",
+            "bytes": 2097152,
+            "samples": 262144,
+            "peak_gain_db": 0.077937
+          }
+        }
+      },
+      "192000": {
+        "config": "configs/120.blue/brutefir-192000@legacy.conf.in",
+        "config_sha256": "4e88af74a2446fd42c616bf98b4517758a2ef94ba60f74f79afff6a8c40dff32",
+        "format": "FLOAT64_LE",
+        "attenuation_db": 2.2,
+        "required_attenuation_db": 2.2,
+        "safety_margin_db": 1.0,
+        "channels": {
+          "left": {
+            "path": "192000/@legacy/L.raw",
+            "sha256": "3ba75cb7ef1817d22d7d8bf231d769d893d2ca20a060ddbec5417b686b118413",
+            "bytes": 4194304,
+            "samples": 524288,
+            "peak_gain_db": 1.193749
+          },
+          "right": {
+            "path": "192000/@legacy/R.raw",
+            "sha256": "cca8ad664955a462ffc27b1b6f2c6099ddf71a76e9c67630f3eb7c9aeeffd802",
+            "bytes": 4194304,
+            "samples": 524288,
+            "peak_gain_db": 0.077925
+          }
+        }
+      }
+    }
+  },
+  "analysis": {
+    "path": "analysis/legacy.json",
+    "sha256": "3e3a3f8053097f82fced2f5c294de6bc728c18d96e9c632d1ebaa9a6bc065df4",
+    "bytes": 19907764
+  }
+}
